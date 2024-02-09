@@ -7,12 +7,14 @@
 ```
 - src/
     - api/
+        - output/
     - etl/
 - notebooks/
 - diagrams/
 ```
 
 * `src/` - Contains source code for pipeline and API service
+- `src/api/output` - Contains screenshots of simulated API requests/responses from working HTTP-based API
 - `notebooks/` - Contains ML notebooks used for training the model
 - `diagrams/` - contains architecture diagrams
 
