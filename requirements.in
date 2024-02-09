@@ -1,0 +1,10 @@
+dagster
+dagster-pandas
+dagit
+google-cloud
+google-cloud-storage
+pandas
+ipykernel
+scikit-learn
+matplotlib
+seaborn

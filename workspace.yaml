@@ -1,0 +1,4 @@
+load_from:
+  - python_file:
+      location_name: etl_repos
+      relative_path: src/etl/repos.py
