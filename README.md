@@ -9,12 +9,14 @@
     - api/
         - output/
     - etl/
+        - output/
 - notebooks/
 - diagrams/
 ```
 
 * `src/` - Contains source code for pipeline and API service
 - `src/api/output` - Contains screenshots of simulated API requests/responses from working HTTP-based API
+- `src/etl/output` - Contains screenshots of tests for the different ETL functions
 - `notebooks/` - Contains ML notebooks used for training the model
 - `diagrams/` - contains architecture diagrams
 
