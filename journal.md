@@ -44,7 +44,14 @@
 ## **Day 3**
 
 ### **Data ETL Pipeline**
-- Placeholder
+- Adding the missing lines of code in the load.py file made me appreciate again the online guides since there are plenty of them. I was able to easily upload my files to a BigQuery table.
+- BigQuery reminds me of the data warehouse + data querying service that we use at work.
+- I managed to make the dagster web app work properly, where it showed the job pipeline. It was a matter of tweaking the decorator arguments from the extract.py file. I also had to change the job name definition inside the repos.py and schedules.py files since it was the job name was wrong. It used a placeholder value instead of "bank_etl_job" which was defined inside the jobs.py file.
+- For some reason, the web app encountered an error again despite me triple checking everything. I did not have enough time so I decided to push through with the deployment to the GCP VM.
+- I wished I knew a better way to upload the whole directory. What I did was manual uploading of all files and creation of directories then moving them to their respective file paths one-by-one.
+- After installing all necessary packages, executing dagit worked fine, except it also showed the error that I encountered in my local machine. It had to do with not properly finding the defined job "bank_etl_job", which puzzled me again.
+- Documentation was the last part that I focused on. I made sure that my code worked before I documented everything. It was fun trying to encapsulate everything into an easy-to-understand diagram.
+- Overall, I really appreciated this exercise since it made me learn a lot of new things (from figuring out proper configurations in a new cloud services platform to using the said platform's SDK for calling on its services)
 ---
 <br />
 
