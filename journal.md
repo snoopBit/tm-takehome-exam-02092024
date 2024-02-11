@@ -9,7 +9,7 @@
 | 1 | **GitHub Repository Creation** | <ul><li>Managed to refresh my memory again on basic GitHub repo creation considerations and project structure</li></ul> |
 | 1 | **Model Deployment and Optimization** | <ul><li>This time the Jupyter notebook was provided, so it was easier to start the exam</li><li>I was able to understand the model development process from cleaning to model tuning.</li><li>I managed to deploy the HTTP-based API on a compute engine VM using my personal account, since I had no additional access to the provided GCP project to create VM's there. |
 | 2 | **Data ETL Pipeline** | <ul><li>Had to refresh my memory on how dagster works</li><li>Decided to work on individual ops functions first</li><li>Managed to make the code work without the use of dagster decorators. Still trying to figure out how to resolve the issue with the dagster decorators</li></ul> |
-| 3 | **Data ETL Pipeline** | <ul><li>Placeholder</li></ul> |
+| 3 | **Data ETL Pipeline** | <ul><li>Finished editing the load.py file</li><li>Managed to make the dagster web app work for a little while before bugging out.</li><li>Finished documentation by creating diagrams and putting in last journal entries before submission.</li></ul> |
 <br />
 
 ## **Day 1**
