@@ -1,0 +1,4 @@
+,CreditScore,Age,Tenure,Balance,NumOfProducts,HasCreditCard,IsActiveMember,EstimatedSalary,Branch_Makati City,Branch_Manila,Branch_Quezon City,Gender_Female,Gender_Male,churn
+0,619.0,42.0,2.0,0.0,1.0,1.0,1.0,101348.88,0.0,1.0,0.0,1.0,0.0,0
+1,608.0,41.0,1.0,83807.86,1.0,0.0,1.0,112542.58,1.0,0.0,0.0,1.0,0.0,0
+2,502.0,42.0,8.0,159660.8,3.0,1.0,0.0,113931.57,0.0,1.0,0.0,1.0,0.0,1

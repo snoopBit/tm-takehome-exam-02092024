@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple
 from dagster import op, Out
 from google.cloud import storage
 import pandas as pd
@@ -6,7 +6,7 @@ import os
 import sys
 
 # Added service account credentials for accessing the Google Cloud services
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'servicekey_googlecloud.json'
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/mnt/d/Thinking Machines/exam-feb9/tm-takehome-exam-02092024/src/etl/ops/servicekey_googlecloud.json'
 
 # Added these lines of code since the program wasn't able to properly find the settings.py file
 # Add the src directory to the Python path
@@ -14,14 +14,24 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 
 from etl.settings import BANK_RAW_DATA_LOCATION, BANK_PROCESSED_DATA_LOCATION
 
+# from src.etl.settings import BANK_RAW_DATA_LOCATION, BANK_PROCESSED_DATA_LOCATION
+
+# @op(
+#     description="Extract new raw bank data",
+#     out={
+#         "raw_data_df": Out(),
+#         "raw_data_files": Out(),
+#     }
+# )
+# def get_latest_bank_raw_data(context) -> pd.DataFrame:
 @op(
     description="Extract new raw bank data",
     out={
-        "raw_data_df": Out(),
-        "raw_data_files": Out(),
+        "raw_data_df": Out(pd.DataFrame, description="Raw bank data DataFrame"),
+        "raw_data_files": Out(List[str], description="List of new raw data file names"),
     }
 )
-def get_latest_bank_raw_data(context) -> pd.DataFrame:
+def get_latest_bank_raw_data(context) -> Tuple[pd.DataFrame, List[str]]:
     context.log.info(f"Extracting raw data from {BANK_RAW_DATA_LOCATION}")
 
     storage_client = storage.Client()

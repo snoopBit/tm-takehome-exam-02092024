@@ -12,7 +12,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 
 from etl.settings import PREDICTION_API_URL
 
-def _row_to_json(row: pd.DataFrame):
+# from src.etl.settings import PREDICTION_API_URL
+
+def _row_to_json(row: pd.DataFrame) -> dict:
     # Get the JSON format for all the columns except the index column
     cols = row.index[1:]
     json_payload = row[cols].to_dict()

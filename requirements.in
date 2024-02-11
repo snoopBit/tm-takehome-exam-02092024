@@ -3,6 +3,7 @@ dagster-pandas
 dagit
 google-cloud
 google-cloud-storage
+google-cloud-bigquery
 pandas
 ipykernel
 scikit-learn
